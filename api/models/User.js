@@ -29,6 +29,14 @@ module.exports = {
     oauthProvider: {
       type: 'string'
     },
+    authToken: {
+      type: 'string'
+    },
+    roles: {
+      collection: 'role',
+      via: 'person',
+      through: 'userrole'
+    }
   }
 };
 
